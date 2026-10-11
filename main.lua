@@ -88,7 +88,7 @@ function MathPuzzle:openSettingsDialog()
             _("Current Settings:\n• Digits: %d\n• Operation: %s\n\nEnter digits (1-5) or choose options below:"),
             self.digit_level, self.selected_op
         ),
-        input_type = "number",
+        num_input = true, -- Forces soft keyboard to number view
         buttons = {
             {
                 {
@@ -149,7 +149,7 @@ function MathPuzzle:startNewGame()
             _("Solve the equation:\n\n   %s = ?\n\nEnter your answer below:"),
             puzzle.equation_str
         ),
-        input_type = "number",
+        num_input = true, -- Forces soft keyboard to number view
         buttons = {
             {
                 {
